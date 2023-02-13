@@ -1,0 +1,15 @@
+<h1>math works</h1>
+<div>
+    <label>Enter Your Number</label><br>
+    <input type="number"  [value]="unmb1" #firstnumb>
+    <br>
+    <br>
+    <label>Enter Your Limit</label><br>
+    <input type="number" [value]="limit" #limit>
+    <br>
+    <br>
+    <button (click)="show(firstnumb.value,limit.value)"> show</button>
+</div>
+<div>
+    <p *ngFor="let i of numblist">{{numblist}}</p>
+</div>
